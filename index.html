@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Jason Adindu">
+    <meta name="description" content="About Me">
+    <meta name="keywords" content="html, css, web, web developmet, seo">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="./assest/image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css" media="all">
+    <script src="./calculator.js" defer></script>
+</head>
+<body>
+    <div class="container">
+    <div class="calculator">
+        <form>
+        <div class="display">
+            <input type="text"  placeholder="0" id="display" name="display">
+        </div>
+        <div>
+            <input type="button" class="clear" onclick="allclear()" value="CLEAR">     
+            <input type="button" class="color" onclick="show('%')" value="÷">
+        </div>
+        <div>
+            <input type="button" value="7" onclick="display.value += '7' ">
+            <input type="button" value="8" onclick="display.value += '8' ">
+            <input type="button" value="9" onclick="display.value += '9' ">
+            <input type="button" value="x" class="color" onclick="show('*')" value += 'x'>
+        </div>
+        <div>
+            <input type="button" value="4" onclick="display.value += '4' ">
+            <input type="button" value="5" onclick="display.value += '5' ">
+            <input type="button" value="6" onclick="display.value += '6' ">
+            <input type="button" value="-" class="color"  onclick="show('-')" value += '-'>
+        </div>
+        <div>
+            <input type="button" value="1" onclick="display.value += '1' ">
+            <input type="button" value="2" onclick="display.value += '2' ">
+            <input type="button" value="3" onclick="display.value += '3' ">
+            <input type="button" value="+" class="color" onclick="show('+')" value += '+'>
+        </div>
+        <div>
+            
+            <input type="button" class="zero" value="0" onclick="display.value += '0'">
+            <input type="button" value="." onclick="display.value +=  '.'">
+            <input type="button" value="=" class="equal" onclick="calc()" value += '='>
+            
+        </div>
+        </form>
+    </div>
+    </div>
+    
+    
+</body>
+</html>
+    
